@@ -1,0 +1,407 @@
+/*body{
+  font-family: 'Roboto';
+  font-style: normal;
+  src: local('Roboto'), local('Roboto-Regular'), url(http://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2'), url(http://fonts.gstatic.com/s/roboto/v15/2UX7WLTfW3W8TclTUvlFyQ.woff) format('woff');
+  list-style: none;
+} */
+
+
+
+/* classes para alinhamento flex */
+.align-center{
+	display:-webkit-flex;
+	-webkit-align-items: center;
+    -webkit-justify-content: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-center-v{
+	display: -webkit-flex;
+    -webkit-align-items: center;
+	display: flex;
+    align-items: center;
+}
+.align-center-h{
+	display: -webkit-flex;
+    -webkit-justify-content: center;
+	display: flex;
+    justify-content: center;
+}
+
+.align-left{
+	display: -webkit-flex;
+    -webkit-align-items: flex-start;
+    -webkit-justify-content: flex-start;
+	display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.align-left-v{
+	display: -webkit-flex;
+    -webkit-align-items: flex-start;
+	display: flex;
+    align-items: flex-start;
+}
+.align-left-h{
+	display: -webkit-flex;
+    -webkit-justify-content: flex-start;
+	display: flex;
+    justify-content: flex-start;
+}
+
+.align-right{
+	display: -webkit-flex;
+    -webkit-align-items: flex-end;
+    -webkit-justify-content: flex-end;
+	display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.align-right-v{
+	display: -webkit-flex;
+    -webkit-align-items: flex-end;
+	display: flex;
+    align-items: flex-end;
+}
+.align-right-h{
+	display: -webkit-flex;
+    -webkit-justify-content: flex-end;
+	display: flex;
+    justify-content: flex-end;
+}
+
+
+/* testes */
+
+.align-center{
+	display:-webkit-flex;
+	-webkit-align-items: center;
+    -webkit-justify-content: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.align-left-center{
+	display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: flex-start;
+	display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.align-right-center{
+	display: -webkit-flex;
+    -webkit-justify-content: flex-end;
+    -webkit-align-items: center;
+	display: flex;
+	align-items: center;
+    justify-content: flex-end;
+}
+
+.align-left-top{
+	display: -webkit-flex;
+    -webkit-align-items: flex-start;
+    -webkit-justify-content: flex-start;
+	display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.align-right-top{
+	display: -webkit-flex;
+    -webkit-align-items: flex-start;
+    -webkit-justify-content: flex-end;
+	display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+.align-center-top{
+	display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: flex-start;
+	display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.align-center-bottom{
+	display: -webkit-flex;
+    -webkit-justify-content: center;
+    -webkit-align-items: flex-end;
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.align-right-bottom{
+	display: -webkit-flex;
+    -webkit-align-items: flex-end;
+    -webkit-justify-content: flex-end;
+	display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.align-left-bottom{
+	display: -webkit-flex;
+	-webkit-align-items: flex-end;
+    -webkit-justify-content: flex-start;
+	display: flex;
+	align-items: flex-end;
+    justify-content: flex-start;
+}
+
+
+/* classes para alinhamento absolute */
+
+.self-center{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+.self-left-center{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto auto 0;
+}
+.self-right-center{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0 auto auto;
+}
+
+.self-left-top{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto auto 0;
+}
+.self-right-top{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 0 auto auto;
+}
+.self-center-top{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto auto auto;
+}
+
+.self-center-bottom{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+	margin: auto auto 0 auto;
+}
+
+.self-right-bottom{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto 0 0 auto;
+}
+.self-left-bottom{
+	position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto auto 0 0;
+}
+
+.img-circle{
+    border-radius: 50%;
+}
+.img-circle-cover{
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* background-size */
+.bg-cover{
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.bg-contain{
+	background-size: contain;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* class amount circle notification */
+
+.amount-notification{
+    top:-100%;
+    right: -100%;
+    position: absolute;
+    min-width: 22px;
+    min-height: 22px;
+    text-align: center;
+}
+.amount-notification > div.format-responsive{
+    margin-left: -65%;
+    margin-top: 60%;
+}
+.amount-notification .amount-item{
+    line-height: 200%;
+    padding: 0;
+    font-size: 11.5px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    border: 0;
+    display: none;
+    color: white;
+} 
+.amount-notification .amount-item:not(:empty) {
+    background: red;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+
+/* Prepare format responsive */
+.format-responsive{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 0;
+    padding: 0;
+}
+/* Item responsive format */
+.format-responsive .format-item{
+	position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Formats responsive */
+.format-1by1{
+	padding-bottom: 100%;
+}
+.format-16by7{
+	padding-bottom: calc(100% / 16 * 7);
+}
+.format-16by8{
+	padding-bottom: calc(100% / 16 * 8);
+}
+.format-16by9{
+	padding-bottom: calc(100% / 16 * 9);
+}
+.format-16by10{
+	padding-bottom: calc(100% / 16 * 10);
+}
+.format-16by17{
+	padding-bottom: calc(100% / 16 * 17);
+}
+.format-4by1{
+	padding-bottom: calc(100% / 4);
+}
+.format-4by3{
+	padding-bottom: calc(100% / 4 * 3);
+}
+.format-7by8{
+	padding-bottom: calc(100% / 7 * 8);
+}
+.format-9by13{
+	padding-bottom: calc(100% / 9 * 13);
+}
+
+
+
+@media screen and (max-width: 955px){
+	.format-15by9-for-4by3{
+		padding-bottom: calc(100% / 15 * 9);
+	}
+}
+@media screen and (max-width: 500px){
+	.format-15by9-for-4by3{
+		padding-bottom: calc(100% / 4 * 3);
+	}
+}
+
+/* classes auxiliares */
+.no-select{
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* classes temas */
+.btn-master{
+	background: transparent linear-gradient(to bottom, #4E6495 10%, #444E87 100%) repeat scroll 0% 0%;
+	color: #FFF;
+	border: 1px solid #4E6495;
+	border-radius: 3px;
+	border-bottom: 2px solid #3A4B6F;
+}
+
+.btn-master:active{
+	border-bottom: 1px solid #4E6495;
+    border-top: 2px solid #3A4B6F;
+    background: transparent linear-gradient(to bottom, #444E87 10%, #4E6495 100%) repeat scroll 0% 0% !important;
+}
+
+.btn-master-white{
+	color: #212121;
+	border: 1px solid #CCC;
+	border-radius: 3px;
+	background: transparent linear-gradient(to bottom, #FFF 10%, #c0c0c0 100%) repeat scroll 0% 0%;
+	border-bottom: 2px solid #ababab;
+}
+
+.btn-master-white:active{
+	border-bottom: 1px solid #CCC;
+    border-top: 2px solid #ababab;
+    background: transparent linear-gradient(to bottom, #c0c0c0 10%, #FFF 100%) repeat scroll 0% 0% !important;
+}
+.btn-master-white:focus, .btn-master:focus{
+	outline: none !important;
+}
+
+/* style selected   */
+.selected-toggle.active-selected{
+	background: transparent linear-gradient(to bottom, #4E6495 10%, #444E87 100%) repeat scroll 0% 0% !important;
+	color: white;
+   
+}
+
+.selected-toggle.active-selected option{
+	color: #212121 !important;
+     display: block;
+
+}
+
+
+
